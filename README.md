@@ -8,6 +8,18 @@ Web application to track noise events with real-time counters and logging.
 - Real-time counter tracking
 - Automatic midnight reset
 - Manual reset option
+- Automatic log file generation
+    - Creates separate log files for each noise type
+    - Logs include timestamp, event type, and running counter
+    - Log files are generated dynamically in the project directory
+
+## Log File Behavior
+- `Polter_Log.txt`: Logs "Poltern" events
+- `Moebel_Geraeusche_Log.txt`: Logs "Möbel verrücken" events
+- Each log entry includes:
+    - Timestamp
+    - Event description
+    - Consecutive event number
 
 ## Technologies
 - Java
@@ -17,7 +29,7 @@ Web application to track noise events with real-time counters and logging.
 
 ## Setup
 1. Clone repository
-2. Open in IntelliJ IDEA
+2. Open in IDE (e.g. IntelliJ Idea, VSCode, etc.)
 3. Deploy to servlet container
 
 ## Usage
